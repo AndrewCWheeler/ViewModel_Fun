@@ -1,0 +1,10 @@
+@model List<User>
+@{
+    ViewData["Title"] = "Users";
+}
+<div class="text-center">
+    <h1 class="display-4">Here are some Users!</h1>
+    @foreach(var user in Model){
+    <h1 class=mt-5>@user.FirstName @user.LastName</h1>
+    }
+</div>
